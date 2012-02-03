@@ -1,2 +1,7 @@
-This project is setup to get you a running demo environment for JBoss Enterprise Data Services. It makes use of JBoss SOA-P and EDS
-which you need to grab from the Customer Support Portal. See the quickstart document for details.
+This project is setup to get you a running demo environment for 
+JBoss Enterprise Data Services. It makes use of JBoss SOA-P and EDS
+which you need to grab from the Customer Support Portal. 
+
+See the quickstart document for details.
+
+Original author: Kaushik Bhattacharya
