@@ -1,0 +1,7 @@
+# Sample queries
+#
+select * from product
+select stock.* from (call MarketData.getTextFiles('*.txt')) f, TEXTTABLE(f.file COLUMNS symbol string, price bigdecimal HEADER) stock
+select product.symbol, stock.price, company_name from product, (call MarketData.getTextFiles('*.txt')) f, TEXTTABLE(f.file COLUMNS symbol string, price bigdecimal HEADER) stock where product.symbol=stock.symbol
+insert into product Values(1050, 'HON', 'Honda Motors Corp.')
+delete from product where SYMBOL = 'HON'

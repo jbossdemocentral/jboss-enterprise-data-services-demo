@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<connection-factories>
+
+   <no-tx-connection-factory>
+      <jndi-name>marketdata-file</jndi-name>
+      <rar-name>teiid-connector-file.rar</rar-name>
+      <connection-definition>javax.resource.cci.ConnectionFactory</connection-definition>      
+      <!--
+        All the available properties for this connector are defined inside the "ra.xml" defined inside the rar
+        file mentioned above. 
+       -->
+             
+      <config-property name="ParentDirectory" type="java.lang.String">${jboss.server.home.dir}/../../../data</config-property>
+            
+      <max-pool-size>20</max-pool-size>
+
+    </no-tx-connection-factory>
+
+</connection-factories>

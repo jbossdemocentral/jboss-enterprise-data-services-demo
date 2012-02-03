@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datasources>
+  <local-tx-datasource>
+    <jndi-name>EDSDemoDS</jndi-name>
+    <connection-url>jdbc:postgresql://localhost:5432/eds_demo</connection-url>
+    <driver-class>org.postgresql.Driver</driver-class>
+    <user-name>soa_p</user-name>
+    <password>postgres</password>
+    <transaction-isolation>TRANSACTION_READ_COMMITTED</transaction-isolation>
+    <min-pool-size>15</min-pool-size>
+    <max-pool-size>100</max-pool-size>
+    <metadata>
+       <type-mapping>PostgreSQL 8.0</type-mapping>
+    </metadata>
+  </local-tx-datasource>
+
+</datasources>
